@@ -16,7 +16,7 @@
             {
                 $dao->insert($this);
             }
-            elseSSA
+            else
             {
                 $dao->update($this);
             }

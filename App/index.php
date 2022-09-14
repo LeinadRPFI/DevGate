@@ -1,14 +1,13 @@
 <?php
-
-    include 'Controller/CursoController.php';
-    include 'Controller/UserController.php';
+    include 'App/Controller/CursoController.php';
+    include 'App/Controller/UserController.php';
 
     $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
     switch($url){
 
         case '/':
-            include('./View/modules/LandingPage.php');
+            include('App/View/modules/LandingPage.php');
         break;
 
         case '/curso':
